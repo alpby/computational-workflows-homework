@@ -5,7 +5,8 @@ on: [push]
 jobs:
   tests:
     runs-on: ubuntu-21.04
-    container: alperbayram/computational-workflows
+    container: 
+      image: docker://alperbayram/computational-workflows:latest
     
     steps:
       - name: Checkout code
