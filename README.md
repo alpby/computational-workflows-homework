@@ -129,7 +129,7 @@ git push -u origin main
    directory `/root/shared` into the container.
 
 ```
-# Add your commands here
+docker run -it -v $(pwd):/root/shared -w /root/shared alperbayram/computational-workflows
 ```
 
 3. Run the tests inside the container by going to `/root/shared` and running the
